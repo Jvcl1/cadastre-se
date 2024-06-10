@@ -16,3 +16,8 @@
     width: -50px;
     border: 3px black #73AD21;
 }
+.fundo{
+    margin:0px;
+    height:100%;
+    background-color: rgb(14, 14, 14);
+}
