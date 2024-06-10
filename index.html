@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="UTF-8">
@@ -12,52 +12,75 @@
                 <h1>Casdastre-se</h1>
             </div>
             <form action="cadastro.php" method="get" autocomplete="on">
-            <div class="borda">
-                <p>
-                    <label for="lest"></label>
-                    <select  name="estado" id="lest">
-                        <option value="AL">Alagoas</option>
-                        <option value="AC">Acre</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BH">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="ES">Espirito Santo</option>
-                        <option value="GO">Goiania</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="PR" selected>Parana</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PA">Pará</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RR">Roraima</option>
-                        <option value="RO">Rondonia</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="SC">Santa Catatarina</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                </p>
-                <p>
-                    <p>   
-                        <label for="Gmail">gmail:</label>
-                        <input type="email">    
-                    </p>
-                    <p>    
-                        <label for="Password">password</label>
-                        <input type="password">
+                <div class="borda">
+                    <div>
+                        <p>
+
+                        </p>
+                        <p>
+                            <p>   
+                                <label for="Gmail">gmail: </label>
+                                <input type="email" name="fname">    
+                            </p>
+                            <p>    
+                                <label for="Password">password: </label>
+                                <input type="password" name="fpassword">
+                            </p>
+                            <p>
+                                <input type="reset" value="limpar" class="canto_reset" name="freset">
+                            </p>
+                            <p>
+                                <label for="CPF">cpf: </label>
+                                <input type="text" placeholder="___.___.___-__" name="fcpf">
+                            </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="borda">
+                    <p>
+                        <label for="Nome">Nome: </label>
+                        <input type="text" name="fnome">
+                        <label for="Sobrenome">Sobrenome: </label>
+                        <input type="text" name="fsobrenome">
+                        <label for="sexo">Sexo: <label>
+                        <select name="sexo" id="fsexo">
+                            <option value="M">Homen</option><br>
+                            <option value="F">Mulher</option><br>
+                        </select>
                     </p>
                     <p>
-                        <input type="reset" value="limpar" class="canto_reset">
+                        <label for="festado">estado: </label>
+                        <select  name="estado" id="festado">
+                            <option value="AL">Alagoas</option><br>
+                            <option value="AC">Acre</optio><br>
+                            <option value="AM">Amazonas</option><br>
+                            <option value="BH">Bahia</option><br>
+                            <option value="CE">Ceará</option><br>
+                            <option value="ES">Espirito Santo</option><br>
+                            <option value="GO">Goiania</option><br>
+                            <option value="MA">Maranhão</option><br>
+                            <option value="MG">Minas Gerais</option><br>
+                            <option value="MT">Mato Grosso</option><br>
+                            <option value="PR" selected>Parana</option><br>
+                            <option value="PB">Paraíba</option><br>
+                            <option value="PA">Pará</option><br>
+                            <option value="PE">Pernambuco</option><br>
+                            <option value="RS">Rio Grande do Sul</option><br>
+                            <option value="RJ">Rio de Janeiro</option><br>
+                            <option value="RN">Rio Grande do Norte</option><br>
+                            <option value="RR">Roraima</option><br>
+                            <option value="RO">Rondonia</option><br>
+                            <option value="SP">São Paulo</option><br>
+                            <option value="SE">Sergipe</option><br>
+                            <option value="SC">Santa Catatarina</option><br>
+                            <option value="TO">Tocantins</option><br>
+                        </select>
                     </p>
                     <p>
-                        <label for="CPF">cpf</label>
-                        <input type="text" placeholder="___.___.___-__">
+                        <label for="nacimento">data de nacimento: </label>
+                        <input type="date">
                     </p>
-                </p>
-            </div>
+                </div>
+            </form>
     </body>
 </html>
